@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2E2E38;
+    height: 100vh;
+}
+#calculadora{
+    display: grid;
+    grid-template-rows: 3fr 5fr 5fr;
+    grid-template-areas: "display"
+                         "corpo1"
+                         "corpo2";
+    row-gap: 2.5%;
+    position: relative;
+    left: 20%;
+    top: 5%;
+    width: 60%;
+    height: 90%;
+    padding: 2.5%;
+    border: thin solid black;
+    border-radius: 3%;
+    background-color: #475256;
+}
+#display{
+    grid-area: display;
+    background-color: #F2F9F1;
+    border: thin groove black;
+    text-align: end;
+    font-size: xx-large;
+    border: 1px solid black;
+}
+#corpo1{
+    grid-area: corpo1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 4fr 1fr) 4fr;
+    min-height: 0;
+    min-width: 0;
+    column-gap: 2.5%;
+    row-gap: 2%;
+    font-size: 100%;
+}
+#corpo2{
+    grid-area: corpo2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 4fr) 1fr 4fr;
+    min-height: 0;
+    min-width: 0;
+    column-gap: 2.5%;
+    row-gap: 2%;
+    font-size: 100%;
+}
+button{
+    line-height: 75%;
+    font-size: 90%;
+    border: solid thin black;
+    border-radius: 8%;
+    color: white;
+    font-family: "Open Sans";
+}
+button:hover{
+    border: groove thin black;
+}
+button.minor{
+    background-color: #2E2E38;
+}
+button.minor:hover{
+    background-color: #3E3E48;
+}
+button.major{
+    background-color: #8F949A;
+}
+button.major:hover{
+    background-color: #9FA4AA;;
+}
+button.pressed{
+    background-color: #5E5E68;
+}
+.redbutton{
+    background-color: #F7575F;
+}
+.redbutton:hover{
+    background-color: #FF6C65;
+}
+.upperscript{
+    color: white;
+    text-align: center;
+    line-height: 75%;
+    font-size: 60%;
+    font-family: "Open Sans";
+}

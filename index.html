@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Calculadora JavaScript </title>
+        <link rel="stylesheet" href="calculadora.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <script src="calculadora.js" defer></script>
+    </head>
+    <body>
+        <div id="calculadora">
+
+            <p  id="display"></p>
+
+            <div id="corpo1">
+                <button class="minor" id="shift"> SHIFT </button>
+                <button class="minor" id="alpha"> ALPHA </button>
+                <button class="minor" id="left"> &lt; </button>
+                <button class="minor" id="right"> &gt; </button>
+                <button class="minor" id="degrees"> DEG </button>
+                <button class="minor" id="mode"> MODE </button>
+
+                <p class="upperscript" id="xcube" data-original="x³" data-shift="x²"> x³ </p>
+                <p class="upperscript" id="cubicrootx" data-original="³√x" data-shift="√x"> ³√x </p>
+                <p class="upperscript" id="lnx" data-original="ln x" data-shift="log x"> ln x </p>
+                <p class="upperscript" id="arcsinx" data-original="sin^-1 x" data-shift="sin x"> sin^-1 x</p>
+                <p class="upperscript" id="arccosx" data-original="cos^-1 x" data-shift="cos x"> cos^-1 x </p>
+                <p class="upperscript" id="arctanx" data-original="tan^-1 x" data-shift="tan x"> tan^-1 x </p>
+                <button class="minor" id="xsquare" data-original="x²" data-shift="x³"> x² </button>
+                <button class="minor" id="sqrtx" data-original="√x" data-shift="³√x"> √x </button>
+                <button class="minor" id="logx" data-original="log x" data-shift="ln x"> log x </button>
+                <button class="minor" id="sinx" data-original="sin x" data-shift="sin^-1 x"> sin x </button>
+                <button class="minor" id="cosx" data-original="cos x" data-shift="cos^-1 x"> cos x </button>
+                <button class="minor" id="tanx" data-original="tan x" data-shift="tan^-1 x"> tan x </button>
+
+                <p>   </p>
+                <p>   </p>
+                <p>   </p>
+                <p class="upperscript" id="xreciproc" data-original="x^-1" data-shift="a/b"> x^-1 </p>
+                <p class="upperscript" id="euler" data-original="e" data-shift="π"> e </p>
+                <p class="upperscript" id="factorial" data-original="!" data-shift="×10ⁿ"> ! </p>
+                <button class="minor" id="xpoweredn"> xⁿ </button>
+                <button class="minor" id="nrootx"> ⁿ√x </button>
+                <button class="minor" id="logxbasen"> logₙ x </button>
+                <button class="minor" id="aoverb" data-original="a/b" data-shift="x^-1"> a/b </button>
+                <button class="minor" id="pi" data-original="π" data-shift="e"> π </button>
+                <button class="minor" id="scinotation" data-original="×10ⁿ" data-shift="!"> ×10ⁿ </button>
+
+                <p class="upperscript" id="CD" data-original="C D" data-shift="A D" data-alpha="A C"> C D </p>
+                <p class="upperscript" id="EF" data-original="E F" data-shift="B F" data-alpha="B E"> E F </p>
+                <p>   </p>
+                <p>   </p>
+                <p class="upperscript" id="M-" data-original="M-" data-shift="M+"> M- </p>
+                <p>   </p>
+                <button class="minor" id="A" data-original="A" data-shift="C" data-alpha="D"> A </button>
+                <button class="minor" id="B" data-original="B" data-shift="E" data-alpha="F"> B </button>
+                <button class="minor" id="openparentheses"> ( </button>
+                <button class="minor" id="closeparentheses"> ) </button>
+                <button class="minor" id="memorysaver" data-original="M+" data-shift="M-"> M+ </button>
+                <button class="minor" id="memoryclean"> CleanM </button>
+            </div>
+
+            <div id="corpo2">
+                <button class="major" id="seven" data-text="7" data-display="7"> 7 </button>
+                <button class="major" id="eight" data-text="8" data-display="8"> 8 </button>
+                <button class="major" id="nine" data-text="9" data-display="9"> 9 </button>
+                <button class="redbutton" id="del"> DEL </button>
+                <button class="redbutton" id="ac"> AC </button>
+
+                <button class="major" id="four" data-text="4" data-display="4"> 4 </button>
+                <button class="major" id="five" data-text="5" data-display="5"> 5 </button>
+                <button class="major" id="six" data-text="6" data-display="6"> 6 </button>
+                <button class="major" id="times" data-text="*" data-display="×"> × </button>
+                <button class="major" id="over" data-text="/" data-display="÷"> ÷ </button>
+
+                <button class="major" id="one" data-text="1" data-display="1"> 1 </button>
+                <button class="major" id="two" data-text="2" data-display="2"> 2 </button>
+                <button class="major" id="three" data-text="3" data-display="3"> 3 </button>
+                <button class="major" id="plus" data-text="+" data-display="+"> + </button>
+                <button class="major" id="minus" data-text="-" data-display="-"> - </button>
+
+                <p>   </p>
+                <p>   </p>
+                <p class="upperscript" id="rand" data-original="rand" data-shift="%"> rand </p>
+                <p class="upperscript" id="preAns" data-original="PreAns" data-shift="Ans"> PreAns  </p>
+                <p>   </p>
+                <button class="major" data-text="0" data-display="0"> 0 </button>
+                <button class="major" data-text="." data-display="."> . </button>
+                <button class="major" id="percent" data-original="%" data-shift="rand"> % </button>
+                <button class="major" id="ans" data-original="Ans" data-shift="PreAns"> Ans </button>
+                <button class="major" id="equal"> = </button>
+            </div>
+
+        </div>
+    </body>
+</html>
